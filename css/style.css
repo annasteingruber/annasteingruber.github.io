@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rosarivo&display=swap') ;
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px auto;
+  grid-template-areas:
+    "shop intro  intro intro "
+    "shop people gov   env";
+  }
+
+#introduction {
+  grid-area: intro;
+  border: solid;
+  padding: 0px 10px;
+  background-color: rgba(131, 24, 27,.5);
+}
+
+#people-and-society {
+  grid-area: people;
+  border: solid;
+  padding: 0px 10px;
+  background-color: rgba(218, 165, 32, .5);
+}
+
+#government {
+  grid-area: gov;
+  border: solid;
+  padding: 0px 10px;
+  background-color: rgba(218, 165, 32, .5);
+}
+
+#environment {
+  grid-area: env;
+  border: solid;
+  padding: 0px 10px;
+  background-color: rgba(218, 165, 32, .5);
+}
+
+.shop {
+  grid-area: shop;
+}
+
+h2 {
+  font-family: "Rosarivo", "Times New Roman", serif;
+}
+
+p {
+  font-family: "Open Sans", "Arial", sans Serif;
+}
