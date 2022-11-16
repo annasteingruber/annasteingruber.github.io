@@ -4,18 +4,23 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 425px 1fr;
   grid-gap: 10px;
   margin: 10px auto;
   grid-template-areas:
     "shop intro  intro intro "
-    "shop people gov   env";
+    "shop people gov   env"
+    "info people gov   env";
   }
+
 
 #introduction {
   grid-area: intro;
   border: solid;
   padding: 0px 10px;
   background-color: rgba(131, 24, 27,.5);
+  box-sizing:content-box;
+  max-width: 960px;
 }
 
 #people-and-society {
@@ -23,6 +28,8 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
+  box-sizing:content-box;
+  max-width: 960px;
 }
 
 #government {
@@ -30,6 +37,8 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
+  box-sizing:content-box;
+  max-width: 960px;
 }
 
 #environment {
@@ -37,16 +46,44 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
+  box-sizing:content-box;
+  max-width: 960px;
 }
 
-.shop {
+#info {
+  grid-area: info;
+  border: solid;
+  padding: 0px 10px;
+  box-sizing:content-box;
+  max-width:960px;
+}
+
+figure {
   grid-area: shop;
+  margin: 5px;
 }
 
-h2 {
+h2 + h3 {
   font-family: "Rosarivo", "Times New Roman", serif;
 }
 
 p {
   font-family: "Open Sans", "Arial", sans Serif;
+  font-size: 16px;
+}
+
+a:link {
+  color:rgb (250, 0, 5);
+}
+
+a:visited {
+  color: rgb(150, 5, 150);
+}
+
+a:hover {
+  color: rgb(131, 24, 27);
+}
+
+a:active {
+  color: rgb(218, 165, 32);
 }
