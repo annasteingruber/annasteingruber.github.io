@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rosarivo&display=swap') ;
 
-
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 425px 1fr;
+  grid-template-rows: 210px 160px 1fr;
   grid-gap: 10px;
   margin: 10px auto;
   grid-template-areas:
-    "shop intro  intro intro "
-    "shop people gov   env"
-    "info people gov   env";
+    "street intro  intro intro "
+    "street people gov   env"
+    "info   people gov   env";
+  box-sizing:content-box;
+  max-width: 960px;
   }
 
 
@@ -18,9 +19,7 @@ main {
   grid-area: intro;
   border: solid;
   padding: 0px 10px;
-  background-color: rgba(131, 24, 27,.5);
-  box-sizing:content-box;
-  max-width: 960px;
+  background-color: rgba(131, 24, 27, .5);
 }
 
 #people-and-society {
@@ -28,8 +27,6 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
-  box-sizing:content-box;
-  max-width: 960px;
 }
 
 #government {
@@ -37,8 +34,6 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
-  box-sizing:content-box;
-  max-width: 960px;
 }
 
 #environment {
@@ -46,21 +41,20 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
-  box-sizing:content-box;
-  max-width: 960px;
 }
 
 #info {
   grid-area: info;
   border: solid;
   padding: 0px 10px;
-  box-sizing:content-box;
-  max-width:960px;
+  background-color: rgba(131, 24, 27, .5);
 }
 
 figure {
-  grid-area: shop;
-  margin: 5px;
+  grid-area: street;
+  margin: 5px auto;
+  box-sizing: content-box;
+  padding: 0px 10px;
 }
 
 h2 + h3 {
@@ -73,7 +67,7 @@ p {
 }
 
 a:link {
-  color:rgb (250, 0, 5);
+  color:rgb(250, 0, 5);
 }
 
 a:visited {
