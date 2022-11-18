@@ -20,6 +20,7 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(131, 24, 27, .5);
+  overflow: scroll;
 }
 
 #people-and-society {
@@ -27,6 +28,7 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
+  overflow: scroll;
 }
 
 #government {
@@ -34,6 +36,7 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
+  overflow: scroll;
 }
 
 #environment {
@@ -41,6 +44,7 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(218, 165, 32, .5);
+  overflow: scroll;
 }
 
 #info {
@@ -48,13 +52,13 @@ main {
   border: solid;
   padding: 0px 10px;
   background-color: rgba(131, 24, 27, .5);
+  overflow: scroll;
 }
 
 figure {
   grid-area: street;
   margin: 5px auto;
   box-sizing: content-box;
-  padding: 0px 10px;
 }
 
 h2 + h3 {
