@@ -15,24 +15,6 @@ main {
   max-width: 960px;
 }
 
-#home body {
-  display:grid;
-  grid-template-areas:
-    "headshot" "heading"
-    "headshot" "info";
-}
-
-#headshot {
-  grid-area: headshot;
-}
-
-#heading {
-  grid-area: heading;
-}
-
-#info {
-  grid-area: info;
-}
 
 header{
   display:grid;
@@ -44,6 +26,10 @@ header{
 figure{
   margin: 0px;
   padding: 20px 0px;
+}
+
+figcaption {
+  font-style: italic;
 }
 
 h1{
@@ -89,7 +75,7 @@ nav li {
     }
 
 nav a:link {
-      color:rgb(213, 202, 187);
+      color: rgb(213, 202, 187);
     }
 
 nav a:visited {
@@ -97,13 +83,29 @@ nav a:visited {
     }
 
 nav a:hover {
-      color: rgba(178, 116, 123);
+      color: rgb(178, 116, 123);
     }
 
 nav a:active {
-      color: rgb(218, 165, 32);
+      color: rgb(97 82 72);
     }
 
-figcaption {
-  font-style: italic;
+a {
+
+}
+
+a:link {
+  color: rgb(0 0 0);
+}
+
+a:visited {
+  color: rgb(213, 202, 187);
+}
+
+a:hover {
+  color: rgb(43, 76, 70);
+}
+
+a:active {
+  color: rgb(97 82 72);
 }
