@@ -8,13 +8,11 @@ body{
 main {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin: 0px auto;
-  padding: 0px 10px;
   box-sizing:content-box;
   max-width: 960px;
 }
-
 
 header{
   display:grid;
@@ -49,10 +47,6 @@ p {
   font-size: 16px;
 }
 
-section{
-  padding: 0px 10px;
-}
-
 nav {
     background-color: rgb(43, 76, 70);
     position: absolute;
@@ -62,16 +56,12 @@ nav {
   }
 
 nav ul {
-      margin: 0 auto;
+      margin: 15px auto;
       padding-left: 0;
       list-style: none;
       max-width: 960px;
-    }
-
-nav li {
-      display: inline-block;
-      margin-right: 30px;
-      padding: 10px 0;
+      display:flex;
+      justify-content: space-between;
     }
 
 nav a:link {
@@ -89,10 +79,6 @@ nav a:hover {
 nav a:active {
       color: rgb(97 82 72);
     }
-
-a {
-
-}
 
 a:link {
   color: rgb(0 0 0);
